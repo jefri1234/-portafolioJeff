@@ -21,8 +21,13 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "baseUrl": ".",  // Esto permite las rutas relativas desde la raíz del proyecto
+    "paths": {
+      "@/*": ["./src/*"]  // Ajusta el alias @ para apuntar a la carpeta src (ajusta esto si tu estructura es diferente)
+    }
   },
+
   "include": [
     "next-env.d.ts",
     ".next/types/**/*.ts",
