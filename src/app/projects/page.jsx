@@ -6,7 +6,7 @@ function Proyects() {
   return (
     <>
       <BoxRevealDemo />
-      <div className='w-3/6 container mx-auto p-10'>
+      <div className='container mx-auto p-10'>
         <MagicCardDemo />
       </div>
     </>
