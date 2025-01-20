@@ -38,7 +38,7 @@ function Home() {
           />
         </div>
         <div className=' container mx-auto p-10'>
-          <SparklesText className="text-green-500 text-7xl"  text="Programar igual de facil que Respirar." />
+          <SparklesText className="text-green-500 text-7xl"  text="Si lo Puedes Imaginar lo puedes Programar" />
           <HyperText> Software Engineer</HyperText>
           <p className='text-white py-4 '>Como ingeniero full-stack experimentado, me apasiona dar vida a ideas creativas a través de aplicaciones web innovadoras. Explore mis últimos proyectos y artículos, que muestran mi experiencia en desarrollo web.</p>
           <RainbowButton>Proyectos</RainbowButton>;
@@ -59,7 +59,7 @@ function Home() {
 
 
       <div className='pt-10'>
-        <div className='bg-gray-950 py-10 flex justify-center items-center'>
+        <div className=' py-10 flex justify-center items-center'>
           <IconCloudDemo />
         </div>
       </div>

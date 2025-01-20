@@ -5,16 +5,11 @@ async function BoxRevealDemo() {
     <div className="flex flex-col items-center justify-center gap-4 container mx-auto p-6 md:p-10">
       <BoxReveal boxColor={"#5046e6"} duration={0.5}>
         <p className="text-5xl font-semibold text-center">
-          Felicitaciones Ahora puedes <br className="hidden md:block" /> Verificar tus certificados
+          Sistemas Realizados como <br className="hidden md:block" />Full Stack Developed
         </p>
       </BoxReveal>
 
-      <BoxReveal boxColor={"#5046e6"} duration={0.5}>
-        <h2 className="mt-[.5rem] text-sm md:text-[1rem] text-center">
-          Created project {" "}
-          <span className="text-[#5046e6]">By me</span>
-        </h2>
-      </BoxReveal>
+
 
       <BoxReveal boxColor={"#5046e6"} duration={0.5}>
         <div className="mt-6 text-sm md:text-base">

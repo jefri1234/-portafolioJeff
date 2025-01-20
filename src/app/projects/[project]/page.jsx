@@ -12,7 +12,7 @@ function ProjectPage() {
     return (
         <div className='flex justify-center items-center flex-col gap-5'>
             <p className='text-white'>The project is: {params.project}</p>
-            <button type="button" onClick={() => router.replace( )} className='bg-green-500 p-2 rounded-lg text-center flex justify-center items-center'>
+            <button type="button" onClick={() => router.back( )} className='bg-green-500 p-2 rounded-lg text-center flex justify-center items-center'>
                 regresar
             </button>
         </div>
