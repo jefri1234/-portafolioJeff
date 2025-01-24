@@ -10,6 +10,8 @@ import { HeroVideoDialogDemo } from '../components/video'
 import Tarjeta from '../components/ui/card'
 import HyperText from '../components/ui/hyper-text'
 import SparklesText from '@/components/ui/sparkles-text'
+import Link from 'next/link'
+
 
 const texts = [
   "Hello",
@@ -38,31 +40,20 @@ function Home() {
           />
         </div>
         <div className=' container mx-auto p-10'>
-          <SparklesText className="text-green-500 text-7xl"  text="Si lo Puedes Imaginar lo puedes Programar" />
+          <SparklesText className="text-green-500 text-7xl" text="Si lo Puedes Imaginar lo puedes Programar" />
           <HyperText> Software Engineer</HyperText>
           <p className='text-white py-4 '>Como ingeniero full-stack experimentado, me apasiona dar vida a ideas creativas a través de aplicaciones web innovadoras. Explore mis últimos proyectos y artículos, que muestran mi experiencia en desarrollo web.</p>
-          <RainbowButton>Proyectos</RainbowButton>;
+          <Link href="/projects">
+            <RainbowButton>Proyectos</RainbowButton>;
+          </Link>
 
         </div>
       </div>
+
+
       <TextRevealByWord text="Si lo Puedes Imaginar Lo Puedes Programar..." />
-      <HeroVideoDialogDemo />
       <VelocityScroll className="text-white">Code Jeff Dev</VelocityScroll>
-      <div className='flex justify-center items-center container mx-auto gap-5 pt-10 w-2/3 flex-wrap'>
-        <Tarjeta />
-        <Tarjeta />
-        <Tarjeta />
-        <Tarjeta />
-        <Tarjeta />
-        <Tarjeta />
-      </div>
-
-
-      <div className='pt-10'>
-        <div className=' py-10 flex justify-center items-center'>
-          <IconCloudDemo />
-        </div>
-      </div>
+ 
     </div>
   )
 }

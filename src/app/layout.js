@@ -1,6 +1,8 @@
 import "./globals.css";
 import Navegacion from '@/components/navbar'
+import Footer from "@/components/Footer"
 import { Providers } from "./providers";
+
 
 export const metadata = {
   title: 'Jeff',
@@ -27,9 +29,10 @@ export default function RootLayout({ children }) {
     <html lang="en" className='dark'>
 
       <body>
-        <Navegacion />
         <Providers>
+          <Navegacion />
           {children}
+          <Footer />
         </Providers>
       </body>
     </html>

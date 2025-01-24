@@ -33,7 +33,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "src/components/ui/dock.tsx"  ],
   "exclude": [
     "node_modules"
   ]
