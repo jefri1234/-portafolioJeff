@@ -5,7 +5,7 @@ async function BoxRevealDemo() {
     <div className="flex flex-col items-center justify-center gap-4 container mx-auto p-6 md:p-10">
       <BoxReveal boxColor={"#5046e6"} duration={0.5}>
         <p className="text-6xl font-bold text-center">
-          Sistemas Realizados como <br className="hidden md:block" />Full Stack Developed
+          Sistemas Realizados como <br className="hidden md:block" />Full Stack Developer
         </p>
       </BoxReveal>
 

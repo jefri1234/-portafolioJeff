@@ -9,7 +9,7 @@ import { ExternalLink, Code2, BookOpen, Brain } from "lucide-react";
 const projects = [
   {
     title: "Plataforma Educativa",
-    description: "Sistema integral de aprendizaje en línea con características interactivas y seguimiento de progreso.",
+    description: "Sistema  de aprendizaje en línea con Aula virtual, materiales educartivos, descargables , cursos, modulos.",
     image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&q=80&w=1200",
     technologies: ["React", "Next.js", "TypeScript", "PostgreSQL", "JavaScript","Node.js","Prisma","NextUI","ShadCN","Vercel"],
     link: "https://consultinggroup.com.pe",
@@ -25,7 +25,7 @@ const projects = [
   },
   {
     title: "Inmobiliaria",
-    description: "Asistente virtual inteligente para automatización de tareas y análisis de datos.",
+    description: "Aplicacion inmobiliaria de venta de propiedades,casas, lotes, pisos, departamento.",
     image: "/img/inmoviliaria.png",
     technologies: ["PHP", "Laravel", "React", "Next.js", "Postgresql","Tailwind.css","ShadCN","NextUI"],
     link: "https://nbjconstructores.com/",
@@ -36,6 +36,14 @@ const projects = [
 
 
 const projectsPersonales = [
+  {
+    title: "Restaurante",
+    description: "aplicacion para un restaurante de ventas y reservar de platillos.",
+    image: "/img/restaurante.png",
+    technologies: ["PHP", "Laravel", "React", "Next.js", "Postgresql","Tailwind.css","ShadCN","NextUI"],
+    link: "https://chicha.com.pe/cusco/",
+    icon: Brain,
+  },
   {
     title: "Lista de perfiles de  personas",
     description: "Realiazacion de peticion con fetch y obtencion de datos de una Api y muestra en la interfaz",
@@ -51,15 +59,8 @@ const projectsPersonales = [
     technologies: ["React", "Node.js", "Next.js", "Typescript","Sqlite","Tailwind.css","NextUI"],
     link: "https://crud-next-production.up.railway.app/",
     icon: Code2,
-  },
-  {
-    title: "Restaurante",
-    description: "aplicacion para un restaurante de ventas y reservar de platillos.",
-    image: "/img/restaurante.png",
-    technologies: ["PHP", "Laravel", "React", "Next.js", "Postgresql","Tailwind.css","ShadCN","NextUI"],
-    link: "https://chicha.com.pe/cusco/",
-    icon: Brain,
-  },
+  }
+  
 ];
 function Proyects() {
   return (

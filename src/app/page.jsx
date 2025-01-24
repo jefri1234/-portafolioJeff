@@ -44,7 +44,7 @@ function Home() {
           <HyperText> Software Engineer</HyperText>
           <p className='text-white py-4 '>Como ingeniero full-stack experimentado, me apasiona dar vida a ideas creativas a través de aplicaciones web innovadoras. Explore mis últimos proyectos y artículos, que muestran mi experiencia en desarrollo web.</p>
           <Link href="/projects">
-            <RainbowButton>Proyectos</RainbowButton>;
+            <RainbowButton>Proyectos</RainbowButton>
           </Link>
 
         </div>

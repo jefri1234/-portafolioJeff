@@ -13,6 +13,11 @@ function Footer() {
                         <Image src="/icons/github.png" alt="GitHub" width="40" height="40" />
                     </Link>
                 </div>
+                <div className="flex justify-center items-center gap-3">
+                    <Link href="https://www.tiktok.com/@devjef" target="_blank" rel="noopener noreferrer">
+                        <Image src="/icons/icon-tiktok.png" alt="GitHub" width="40" height="40" />
+                    </Link>
+                </div>
 
                 <div className="flex justify-center items-center gap-3">
                     <Link href="https://www.linkedin.com/in/jefferson-obregon-mejia-2245842b0/" target="_blank" rel="noopener noreferrer">
