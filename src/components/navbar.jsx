@@ -7,9 +7,8 @@ import Image from "next/image";
 export default function App() {
   return (
     <div className="bg-gray-600">
-      <Navbar shouldHideOnScroll>
-
-        <div className="flex  justify-between  w-full">
+      <Navbar shouldHideOnScroll className=" py-5 flex flex-col items-center justify-center">
+        <div className="flex  justify-between items-center w-full py-10">
           <div>
             <NavbarBrand>
               <Link href="/">
@@ -29,19 +28,15 @@ export default function App() {
           </div>
 
           <div className="flex gap-3">
-            <NavbarItem>
-              <Link href="https://github.com/jefri1234" target="_blank" rel="noopener noreferrer">
-                <Image src="/icons/github.png" alt="GitHub" width="30" height="30" />
-              </Link>
-            </NavbarItem>
+            
             <NavbarItem>
               <Link href="https://www.tiktok.com/@devjef" target="_blank" rel="noopener noreferrer">
-                <Image src="/icons/icon-tiktok.png" alt="GitHub" width="30" height="30" />
+                <Image src="/tiktok.svg" alt="GitHub" width="60" height="60" />
               </Link>
             </NavbarItem>
             <NavbarItem>
               <Link href="https://www.linkedin.com/in/jefferson-obregon-mejia-2245842b0/" target="_blank" rel="noopener noreferrer">
-                <Image src="/icons/icon-linkeding.png" alt="LinkedIn" width="30" height="30" />
+                <Image src="/linkeding.svg" alt="LinkedIn" width="50" height="50" />
               </Link>
             </NavbarItem>
           </div>
