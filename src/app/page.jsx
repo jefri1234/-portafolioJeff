@@ -7,7 +7,7 @@ import TextRevealByWord from '../components/ui/text-reveal'
 import HyperText from '../components/ui/hyper-text'
 import SparklesText from '@/components/ui/sparkles-text'
 import Link from 'next/link'
-
+import Profile from '@/components/Profile';
 
 const texts = [
   "Hello",
@@ -48,11 +48,14 @@ function Home() {
           </Link>
         </div>
       </div>
+      <div>
+        <Profile/>
+      </div>
 
       <div className='flex justify-center items-center '>
         <TextRevealByWord text="Si lo Puedes Imaginar Lo Puedes Programar..." />
       </div>
-      <VelocityScroll className="text-white ">Code Jeff Dev</VelocityScroll>
+      
 
     </div>
   )

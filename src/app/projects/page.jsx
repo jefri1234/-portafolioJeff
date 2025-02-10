@@ -11,7 +11,7 @@ const projects = [
     title: "Plataforma Educativa",
     description: "Sistema  de aprendizaje en línea con Aula virtual, materiales educartivos, descargables , cursos, modulos.",
     image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&q=80&w=1200",
-    technologies: ["React", "Next.js", "TypeScript", "PostgreSQL", "JavaScript", "Node.js", "Prisma", "NextUI", "ShadCN", "Vercel"],
+    technologies: ["React", "Next.js", "TypeScript", "PostgreSQL", "JavaScript", "Node.js", "Prisma", "NextUI", "ShadCN"],
     link: "https://consultinggroup.com.pe",
     icon: BookOpen,
   },
