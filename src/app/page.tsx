@@ -1,7 +1,6 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Github, Linkedin, Code2, Instagram, BookMarked, } from "lucide-react"
 import { FaTiktok } from "react-icons/fa";
 import { FiLinkedin } from "react-icons/fi";
 import { FaGithub } from "react-icons/fa6";
@@ -42,8 +41,8 @@ export default function Home() {
         >
           <div className="py-10">
             <h1 className="text-4xl md:text-5xl font-bold mb-2 text-white">Max Obregon</h1>
-            <h2 className="text-xl md:text-2xl text-gray-400">Desarollador Full Stack</h2>
-            <p className="mt-6 text-gray-400">Creo experiencias digitales accesibles y con píxeles perfectos para la web.</p>
+            <h2 className="text-xl md:text-2xl text-gray-400">Ingeniero software</h2>
+            <p className="mt-6 text-gray-400">Enfocado en la calidad del código y la experiencia del usuario.</p>
           </div>
 
           <nav className="mt-8">
@@ -72,6 +71,15 @@ export default function Home() {
                   PROYECTOS
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="#skills"
+                  className="flex items-center text-gray-400 hover:text-teal-300 transition-colors"
+                >
+                  <div className="w-12 h-[1px] bg-gray-400 mr-4"></div>
+                  HABILIDADES
+                </Link>
+              </li>
             </ul>
           </nav>
 
@@ -80,10 +88,10 @@ export default function Home() {
               <Link href="https://github.com/jefri1234" target="blank" className="text-gray-400 hover:text-white transition-colors">
                 <FaGithub size={20} />
               </Link>
-              <Link href="https://www.linkedin.com/in/max-obregon-mejia-2245842b0/" target="blank"  className="text-gray-400 hover:text-white transition-colors">
+              <Link href="https://www.linkedin.com/in/max-obregon-mejia-2245842b0/" target="blank" className="text-gray-400 hover:text-white transition-colors">
                 <FiLinkedin size={20} />
               </Link>
-              <Link href="https://www.tiktok.com/@werksapps" target="blank"  className="text-gray-400 hover:text-white transition-colors">
+              <Link href="https://www.tiktok.com/@werksapps" target="blank" className="text-gray-400 hover:text-white transition-colors">
                 <FaTiktok size={20} />
               </Link>
             </div>
@@ -95,29 +103,22 @@ export default function Home() {
           <section id="about" className=" py-16 ">
             <div className="max-w-2xl mx-auto">
               <p className="text-lg mb-6 text-gray-400">
-                I'm a developer passionate about crafting accessible, pixel-perfect user interfaces that blend
-                thoughtful design with robust engineering. My favorite work lies at the intersection of design and
-                development, creating experiences that not only look great but are meticulously built for performance
-                and usability.
+                Hola soy Max, soy desarrollador full stack me dedico a construir soluciones web que realmente funcionen: estables, bien pensadas y con una experiencia de usuario que sume. Me manejo con fluidez tanto en el frontend como en el backend, y disfruto cada etapa del desarrollo, desde planificar la arquitectura hasta pulir los últimos detalles de diseño.
               </p>
               <p className="text-lg text-gray-400 mb-6">
-                Currently, I'm a Senior Front-End Engineer at <span className="text-teal-300">Compañía</span>,
-                specializing in accessibility. I contribute to the creation and maintenance of UI components that power
-                Compañía's frontend, ensuring our platform meets web accessibility standards and best practices to
-                deliver an inclusive user experience.
+                A lo largo de mi carrera he trabajado con <span className="text-teal-300">tecnologías</span>,
+                como JavaScript, React,Angular Node.js, Express, Php, Laravel, Python, Java, y bases de datos como MongoDB y PostgreSQL. También tengo experiencia integrando APIs, trabajando con autenticación, y creando interfaces que realmente buscan mejorar la experiencia del usuario.
               </p>
               <p className="text-lg text-gray-400 mb-6">
-                In the past, I've had the opportunity to develop software across a variety of settings — from{" "}
-                <span className="text-teal-300">advertising agencies</span> and{" "}
-                <span className="text-teal-300">large corporations</span> to{" "}
-                <span className="text-teal-300">start-ups</span> and{" "}
-                <span className="text-teal-300">small digital product studios</span>. Additionally, I also released a{" "}
-                <span className="text-teal-300">comprehensive video course</span> a few years ago, guiding learners
-                through building a web app with the Spotify API.
+                Me interesa que el código,funcione que sea mantenible, eficiente y claro para cualquier persona que lo toque después. Tengo una forma muy práctica de encarar los proyectos, buscando siempre soluciones simples pero sólidas, y aprendiendo lo que haga falta para que las cosas salgan bien. disfruto resolver problemas, aprender cosas nuevas{" "}
+
+                <span className="text-teal-300">colaborar en equipos</span> y{" "}
+                <span className="text-teal-300">las buenas prácticas</span>{" "}
+                <span className="text-teal-300">Me tomo en serio lo que hago</span> pero{" "}
+                <span className="text-teal-300">también disfruto el proceso y la oportunidad de seguir creciendo en cada proyecto.</span>{" "}
               </p>
               <p className="text-lg text-gray-400">
-                In my spare time, I'm usually climbing, reading, hanging out with my family, or running around
-                exploring new places.
+                Si querés conocer más sobre cómo trabajo o ver algunos de mis proyectos, te invito a seguir navegando por mi portafolio.
               </p>
             </div>
           </section>
@@ -125,12 +126,12 @@ export default function Home() {
           <section id="experience" className=" py-16 ">
             <div className="max-w-2xl mx-auto">
               <h2 className="text-5xl s mb-8 px-3 text-teal-300  font-black">Experiencia</h2>
-              
-              
+
+
               <div className="mb-12 hover:bg-[#42474c64] p-5 rounded-xl  duration-100 ">
                 <div className="text-gray-400 mb-2">2025-01 / 2025-04</div>
                 <h3 className="text-2xl font-semibold text-white mb-2 flex items-center ">
-                  OVERHAULMINING - Desarrollador Full Stack 
+                  OVERHAULMINING - Desarrollador Full Stack
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
@@ -145,7 +146,7 @@ export default function Home() {
                   </svg>
                 </h3>
                 <p className="text-gray-400">
-                Creación de un sistema para una empresa Minera para el proceso de conexión con la SUNAT, creación de facturación electrónica, documentos firmados digitalmente, Optimizar la gestión de los datos para poder obtener de manera organizada, búsqueda de empresas, equipos, placa, ruc, personas, empresas matrices, filtrar y buscar por diferentes tipos de opciones, Autenticación y asignación de roles para gerente, contador, inspector, administrador cada rol tiene asignado sus respectivas acciones, cargar, descargar, filtrar, crear, editar, notificar y demás acciones, Implementación de web corporativa para la representación a la empresa acerca de los servicios, cursos, empresas.
+                  Creación de un sistema para una empresa Minera para el proceso de conexión con la SUNAT, creación de facturación electrónica, documentos firmados digitalmente, Optimizar la gestión de los datos para poder obtener de manera organizada, búsqueda de empresas, equipos, placa, ruc, personas, empresas matrices, filtrar y buscar por diferentes tipos de opciones, Autenticación y asignación de roles para gerente, contador, inspector, administrador cada rol tiene asignado sus respectivas acciones, cargar, descargar, filtrar, crear, editar, notificar y demás acciones, Implementación de web corporativa para la representación a la empresa acerca de los servicios, cursos, empresas.
                 </p>
                 <div className="flex flex-wrap gap-2 mt-4">
                   <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">PHP</span>
@@ -156,14 +157,14 @@ export default function Home() {
                   <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Docker</span>
                   <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">VPS</span>
                   <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">AWS</span>
-                  
+
                 </div>
               </div>
 
               <div className="mb-12 hover:bg-[#42474c64] p-5 rounded-xl  duration-100 ">
                 <div className="text-gray-400 mb-2">2024-01 / 2024-12</div>
                 <h3 className="text-2xl font-semibold text-white mb-2 flex items-center ">
-                  Consultinggroup - Desarrollador Full Stack 
+                  Consultinggroup - Desarrollador Full Stack
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
@@ -178,7 +179,7 @@ export default function Home() {
                   </svg>
                 </h3>
                 <p className="text-gray-400">
-                Lideré para la creacion de la  Aplicacion de un Aula virtual donde podemos visualizar cursos, ingreso al aula virtual, modulos , materiales de estudio, generación de certificados y constancias. Filtrado de cursos, modulos, Landing Pages para cada curso, Filtrado de alumnos, Panel administrativo y adapataciones y creación de interfaces a nivel general.
+                  Lideré para la creacion de la  Aplicacion de un Aula virtual donde podemos visualizar cursos, ingreso al aula virtual, modulos , materiales de estudio, generación de certificados y constancias. Filtrado de cursos, modulos, Landing Pages para cada curso, Filtrado de alumnos, Panel administrativo y adapataciones y creación de interfaces a nivel general.
                 </p>
                 <div className="flex flex-wrap gap-2 mt-4">
                   <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">JavaScript</span>
@@ -194,7 +195,7 @@ export default function Home() {
                 <div className="text-gray-400 mb-2">2023-01 / 2023-12</div>
                 <h3 className="text-2xl font-semibold text-white mb-2">Rematazo - Desarrollador Full Stack </h3>
                 <p className="text-gray-400">
-                Creacion de un aplicativo de ventas de productos tecnologicos, interfaces para la visualización de productos por mas vendidos, ofertas o promociones asi como la organizacion por categoria y busqueda de productos, clasificación de nuevos producos, Panel administrativo para realización de cotizaciones asi como adaptacion de interfaces en diferentes dispositivos.
+                  Creacion de un aplicativo de ventas de productos tecnologicos, interfaces para la visualización de productos por mas vendidos, ofertas o promociones asi como la organizacion por categoria y busqueda de productos, clasificación de nuevos producos, Panel administrativo para realización de cotizaciones asi como adaptacion de interfaces en diferentes dispositivos.
                 </p>
                 <div className="flex flex-wrap gap-2 mt-4">
                   <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">React</span>
@@ -207,9 +208,9 @@ export default function Home() {
 
               <div className="mb-12 hover:bg-[#42474c64] p-5 rounded-xl transition-colors duration-100">
                 <div className="text-gray-400 mb-2">2022-01 / 2022-06</div>
-                <h3 className="text-2xl font-semibold text-white mb-2">nbjconstructores - Desarrollador Frontend</h3>
+                <h3 className="text-2xl font-semibold text-white mb-2">NBJCONSTRUCTORES - Desarrollador Frontend</h3>
                 <p className="text-gray-400">
-                Desarollo una Aplicacion inmobiliaria de venta de propiedades,casas, lotes, pisos, departamento donde podemos realizar busquedas para obtener por direccion o precios, ademas de obtener descripcion detallada de cada propiedad.
+                  Desarollo una Aplicacion inmobiliaria de venta de propiedades,casas, lotes, pisos, departamento donde podemos realizar busquedas para obtener por direccion o precios, ademas de obtener descripcion detallada de cada propiedad.
                 </p>
                 <div className="flex flex-wrap gap-2 mt-4">
                   <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Angular</span>
@@ -225,44 +226,115 @@ export default function Home() {
 
           <section id="projects" className=" py-5 ">
             <div className="max-w-2xl mx-auto">
-            <h2 className="text-5xl s mb-8 px-3 text-teal-300  font-black">Proyectos</h2>
+              <h2 className="text-5xl s mb-8 px-3 text-teal-300  font-black">Proyectos</h2>
               <div className="mb-12 hover:bg-[#42474c64] p-5 rounded-xl transition-colors duration-100">
-                <h3 className="text-2xl font-semibold text-white mb-4">Proyecto Destacado</h3>
+                <h3 className="text-2xl font-semibold text-white mb-4">Ecommerce - venta de ropas</h3>
                 <p className="text-gray-400 mb-4">
-                  Una aplicación web completa que permite a los usuarios gestionar sus tareas diarias, establecer
-                  recordatorios y organizar proyectos. Implementada con React, Next.js y una API RESTful.
+                  Una aplicación web de comercio electrónico para la venta de ropa, con funcionalidades de carrito de compras, gestión de pedidos,
+                  autenticación de usuarios, administracion de productos categorias y busqueda de productos por nombre, precio y categoria.
                 </p>
                 <div className="flex flex-wrap gap-2 mt-4">
                   <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">React</span>
                   <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Next.js</span>
                   <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Node.js</span>
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Tailwind.css</span>
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">php</span>
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">PHP</span>
+                </div>
+              </div>
+
+              <div className="mb-12 hover:bg-[#42474c64] p-5 rounded-xl transition-colors duration-100">
+                <h3 className="text-2xl font-semibold text-white mb-4">Aplicacion web inmobiliaria</h3>
+                <p className="text-gray-400 mb-4">
+                  Una aplicación web para la compra y venta de propiedades, con funcionalidades de búsqueda avanzada, filtrado por precio y ubicación,
+                  y gestión de propiedades, incluyendo la posibilidad de agregar, editar y eliminar propiedades.
+                </p>
+                <div className="flex flex-wrap gap-2 mt-4">
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">React</span>
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Redux</span>
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Next.js</span>
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Typescript</span>
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">php</span>
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">SQL</span>
+                </div>
+              </div>
+
+              <div className="mb-12 hover:bg-[#42474c64] p-5 rounded-xl transition-colors duration-100">
+                <h3 className="text-2xl font-semibold text-white mb-4">Gestion de tareas</h3>
+                <p className="text-gray-400 mb-4">
+                  Una aplicación web para la gestión de tareas, con funcionalidades de creación, edición y eliminación de tareas, así como la posibilidad de asignar tareas a diferentes usuarios,establecer fechas de vencimiento.
+                  La aplicación incluye un sistema de autenticación y autorización para garantizar la seguridad de los datos.
+
+
+                </p>
+                <div className="flex flex-wrap gap-2 mt-4">
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Laravel</span>
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Material UI</span>
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Nest.js</span>
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Typescript</span>
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Postgresql</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="skills" className="py-5">
+            <div className="max-w-2xl mx-auto">
+              <h2 className="text-5xl mb-8 px-5 text-teal-300 font-black">Habilidades</h2>
+
+              <div className="mb-10 px-5">
+                <h3 className="text-2xl font-semibold text-white mb-4">Lenguajes</h3>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">JavaScript</span>
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">TypeScript</span>
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">PHP</span>
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Python</span>
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Java</span>
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">C#</span>
+                </div>
+              </div>
+
+              <div className="mb-10 px-5">
+                <h3 className="text-2xl font-semibold text-white mb-4">Frameworks y Librerías</h3>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">React</span>
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Tailwind CSS</span>
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Next.js</span>
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Angular</span>
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Vue</span>
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Svelte</span>
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Nest.js</span>
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Express</span>
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Laravel</span>
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">.NET</span>
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">FastApi</span>
+                </div>
+              </div>
+
+              <div className="mb-10 px-5">
+                <h3 className="text-2xl font-semibold text-white mb-4">Bases de Datos</h3>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">PostgreSQL</span>
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">SQLserver</span>
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">MySQL</span>
                   <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">MongoDB</span>
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">MySQL</span>
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Redis</span>
                 </div>
               </div>
 
-              <div className="mb-12 hover:bg-[#42474c64] p-5 rounded-xl transition-colors duration-100">
-                <h3 className="text-2xl font-semibold text-white mb-4">Otro Proyecto</h3>
-                <p className="text-gray-400 mb-4">
-                  Una aplicación de comercio electrónico con funcionalidades de carrito de compras, pagos y gestión de
-                  pedidos. Desarrollada con React, Redux y Firebase.
-                </p>
-                <div className="flex flex-wrap gap-2 mt-4">
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">React</span>
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Redux</span>
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Firebase</span>
-                </div>
-              </div>
-
-              <div className="mb-12 hover:bg-[#42474c64] p-5 rounded-xl transition-colors duration-100">
-                <h3 className="text-2xl font-semibold text-white mb-4">Otro Proyecto</h3>
-                <p className="text-gray-400 mb-4">
-                  Una aplicación de comercio electrónico con funcionalidades de carrito de compras, pagos y gestión de
-                  pedidos. Desarrollada con React, Redux y Firebase.
-                </p>
-                <div className="flex flex-wrap gap-2 mt-4">
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">React</span>
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Redux</span>
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Firebase</span>
+              <div className="px-5">
+                <h3 className="text-2xl font-semibold text-white mb-4">Herramientas y Otros</h3>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Docker</span>
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Git</span>
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">VPS</span>
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">AWS</span>
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Githab</span>
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Trello</span>
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Notion</span>
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Figma</span>
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Postman</span>
                 </div>
               </div>
             </div>

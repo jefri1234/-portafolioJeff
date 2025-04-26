@@ -14,7 +14,7 @@ const robotoMono = Roboto_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Portfolio Personal",
+  title: "Portfolio",
   description: "Portfolio personal de desarrollador frontend",
 }
 
