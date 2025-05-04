@@ -1,0 +1,50 @@
+{
+    "experiences": [
+      {
+        "date": "2025-01 / 2025-04",
+        "title": "OVERHAULMINING - Desarrollador Full Stack",
+        "description": "Creación de un sistema para una empresa Minera para el proceso de conexión con la SUNAT, creación de facturación electrónica, documentos firmados digitalmente, Optimizar la gestión de los datos para poder obtener de manera organizada, búsqueda de empresas, equipos, placa, ruc, personas, empresas matrices, filtrar y buscar por diferentes tipos de opciones, Autenticación y asignación de roles para gerente, contador, inspector, administrador cada rol tiene asignado sus respectivas acciones, cargar, descargar, filtrar, crear, editar, notificar y demás acciones, Implementación de web corporativa para la representación a la empresa acerca de los servicios, cursos, empresas.",
+        "technologies": ["PHP", "Laravel", "Typescript", "React", "Next.js", "Docker", "VPS", "AWS"],
+        "link": "https://overhaulmining.com/"
+      },
+      {
+        "date": "2024-01 / 2024-12",
+        "title": "Consultinggroup - Desarrollador Full Stack",
+        "description": "Lideré para la creacion de la Aplicacion de un Aula virtual donde podemos visualizar cursos, ingreso al aula virtual, modulos , materiales de estudio, generación de certificados y constancias. Filtrado de cursos, modulos, Landing Pages para cada curso, Filtrado de alumnos, Panel administrativo y adapataciones y creación de interfaces a nivel general.",
+        "technologies": ["JavaScript", "TypeScript", "React", "Next.js", "Node.js", "AWS"],
+        "link": "https://overhaulmining.com/"
+      },
+      {
+        "date": "2023-01 / 2023-12",
+        "title": "Rematazo - Desarrollador Full Stack",
+        "description": "Creacion de un aplicativo de ventas de productos tecnologicos, interfaces para la visualización de productos por mas vendidos, ofertas o promociones asi como la organizacion por categoria y busqueda de productos, clasificación de nuevos producos, Panel administrativo para realización de cotizaciones asi como adaptacion de interfaces en diferentes dispositivos.",
+        "technologies": ["React", "Next.js", "Tailwind CSS", "PHP", "Laravel"],
+        "link": "https://overhaulmining.com/"
+      },
+      {
+        "date": "2022-01 / 2022-06",
+        "title": "NBJCONSTRUCTORES - Desarrollador Frontend",
+        "description": "Desarollo una Aplicacion inmobiliaria de venta de propiedades,casas, lotes, pisos, departamento donde podemos realizar busquedas para obtener por direccion o precios, ademas de obtener descripcion detallada de cada propiedad.",
+        "technologies": ["Angular", "Material UI", "Tailwind CSS", "PHP", "Laravel"],
+        "link": "https://overhaulmining.com/"
+      }
+    ],
+
+    "projects": [
+      {
+        "title": "Ecommerce - venta de ropas",
+        "description": "Una aplicación web de comercio electrónico para la venta de ropa, con funcionalidades de carrito de compras, gestión de pedidos, autenticación de usuarios, administracion de productos categorias y busqueda de productos por nombre, precio y categoria.",
+        "technologies": ["React", "Next.js", "Node.js", "Tailwind.css", "php", "PHP"]
+      },
+      {
+        "title": "Aplicacion web inmobiliaria",
+        "description": "Una aplicación web para la compra y venta de propiedades, con funcionalidades de búsqueda avanzada, filtrado por precio y ubicación, y gestión de propiedades, incluyendo la posibilidad de agregar, editar y eliminar propiedades.",
+        "technologies": ["React", "Redux", "Next.js", "Typescript", "php", "SQL"]
+      },
+      {
+        "title": "Gestion de tareas",
+        "description": "Una aplicación web para la gestión de tareas, con funcionalidades de creación, edición y eliminación de tareas, así como la posibilidad de asignar tareas a diferentes usuarios, establecer fechas de vencimiento. La aplicación incluye un sistema de autenticación y autorización para garantizar la seguridad de los datos.",
+        "technologies": ["Laravel", "Material UI", "Nest.js", "Typescript", "Postgresql"]
+      }
+    ]
+  }

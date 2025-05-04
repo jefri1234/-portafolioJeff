@@ -5,6 +5,7 @@ import { FaTiktok } from "react-icons/fa";
 import { FiLinkedin } from "react-icons/fi";
 import { FaGithub } from "react-icons/fa6";
 import Link from "next/link"
+import data from '../data/data.json'; // Importa el JSON
 
 export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
@@ -123,158 +124,60 @@ export default function Home() {
             </div>
           </section>
 
-          <section id="experience" className=" py-16 ">
+          <section id="experience" className="py-16">
             <div className="max-w-2xl mx-auto">
-              <h2 className="text-5xl s mb-8 px-3 text-teal-300  font-black">Experiencia</h2>
-
-
-              <div className="mb-12 hover:bg-[#42474c64] p-5 rounded-xl  duration-100 ">
-                <div className="text-gray-400 mb-2">2025-01 / 2025-04</div>
-                <h3 className="text-2xl font-semibold text-white mb-2 flex items-center ">
-                  OVERHAULMINING - Desarrollador Full Stack
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    className="w-4 h-4 ml-2"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </h3>
-                <p className="text-gray-400">
-                  Creación de un sistema para una empresa Minera para el proceso de conexión con la SUNAT, creación de facturación electrónica, documentos firmados digitalmente, Optimizar la gestión de los datos para poder obtener de manera organizada, búsqueda de empresas, equipos, placa, ruc, personas, empresas matrices, filtrar y buscar por diferentes tipos de opciones, Autenticación y asignación de roles para gerente, contador, inspector, administrador cada rol tiene asignado sus respectivas acciones, cargar, descargar, filtrar, crear, editar, notificar y demás acciones, Implementación de web corporativa para la representación a la empresa acerca de los servicios, cursos, empresas.
-                </p>
-                <div className="flex flex-wrap gap-2 mt-4">
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">PHP</span>
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Laravel</span>
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Typescript</span>
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">React</span>
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Next.js</span>
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Docker</span>
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">VPS</span>
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">AWS</span>
-
+              <h2 className="text-5xl mb-8 px-3 text-teal-300 font-black">Experiencia</h2>
+              {data.experiences.map((exp, index) => (
+                <div key={index} className="mb-12 hover:bg-[#42474c64] p-5 rounded-xl duration-100">
+                  <div className="text-gray-400 mb-2">{exp.date}</div>
+                  <h3 className="text-2xl font-semibold text-white mb-2 flex items-center">
+                    {exp.title}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      className="w-4 h-4 ml-2"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </h3>
+                  <p className="text-gray-400">{exp.description}</p>
+                  
+                  <a href={exp.link} target="_blank" rel="noopener noreferrer" className="text-teal-300 hover:underline mt-2 inline-block">
+                    Ver más
+                  </a>
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    {exp.technologies.map((tech, techIndex) => (
+                      <span key={techIndex} className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-              </div>
-
-              <div className="mb-12 hover:bg-[#42474c64] p-5 rounded-xl  duration-100 ">
-                <div className="text-gray-400 mb-2">2024-01 / 2024-12</div>
-                <h3 className="text-2xl font-semibold text-white mb-2 flex items-center ">
-                  Consultinggroup - Desarrollador Full Stack
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    className="w-4 h-4 ml-2"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </h3>
-                <p className="text-gray-400">
-                  Lideré para la creacion de la  Aplicacion de un Aula virtual donde podemos visualizar cursos, ingreso al aula virtual, modulos , materiales de estudio, generación de certificados y constancias. Filtrado de cursos, modulos, Landing Pages para cada curso, Filtrado de alumnos, Panel administrativo y adapataciones y creación de interfaces a nivel general.
-                </p>
-                <div className="flex flex-wrap gap-2 mt-4">
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">JavaScript</span>
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">TypeScript</span>
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">React</span>
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Next.js</span>
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Node.js</span>
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">AWS</span>
-                </div>
-              </div>
-
-              <div className="mb-12 hover:bg-[#42474c64] p-5 rounded-xl transition-colors duration-100">
-                <div className="text-gray-400 mb-2">2023-01 / 2023-12</div>
-                <h3 className="text-2xl font-semibold text-white mb-2">Rematazo - Desarrollador Full Stack </h3>
-                <p className="text-gray-400">
-                  Creacion de un aplicativo de ventas de productos tecnologicos, interfaces para la visualización de productos por mas vendidos, ofertas o promociones asi como la organizacion por categoria y busqueda de productos, clasificación de nuevos producos, Panel administrativo para realización de cotizaciones asi como adaptacion de interfaces en diferentes dispositivos.
-                </p>
-                <div className="flex flex-wrap gap-2 mt-4">
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">React</span>
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Next.js</span>
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Tailwind CSS</span>
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">PHP</span>
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Laravel</span>
-                </div>
-              </div>
-
-              <div className="mb-12 hover:bg-[#42474c64] p-5 rounded-xl transition-colors duration-100">
-                <div className="text-gray-400 mb-2">2022-01 / 2022-06</div>
-                <h3 className="text-2xl font-semibold text-white mb-2">NBJCONSTRUCTORES - Desarrollador Frontend</h3>
-                <p className="text-gray-400">
-                  Desarollo una Aplicacion inmobiliaria de venta de propiedades,casas, lotes, pisos, departamento donde podemos realizar busquedas para obtener por direccion o precios, ademas de obtener descripcion detallada de cada propiedad.
-                </p>
-                <div className="flex flex-wrap gap-2 mt-4">
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Angular</span>
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Material UI</span>
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Tailwind CSS</span>
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">PHP</span>
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Laravel</span>
-                </div>
-              </div>
-
+              ))}
             </div>
           </section>
 
-          <section id="projects" className=" py-5 ">
+          <section id="projects" className="py-5">
             <div className="max-w-2xl mx-auto">
-              <h2 className="text-5xl s mb-8 px-3 text-teal-300  font-black">Proyectos</h2>
-              <div className="mb-12 hover:bg-[#42474c64] p-5 rounded-xl transition-colors duration-100">
-                <h3 className="text-2xl font-semibold text-white mb-4">Ecommerce - venta de ropas</h3>
-                <p className="text-gray-400 mb-4">
-                  Una aplicación web de comercio electrónico para la venta de ropa, con funcionalidades de carrito de compras, gestión de pedidos,
-                  autenticación de usuarios, administracion de productos categorias y busqueda de productos por nombre, precio y categoria.
-                </p>
-                <div className="flex flex-wrap gap-2 mt-4">
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">React</span>
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Next.js</span>
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Node.js</span>
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Tailwind.css</span>
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">php</span>
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">PHP</span>
+              <h2 className="text-5xl mb-8 px-3 text-teal-300 font-black">Proyectos</h2>
+              {data.projects.map((project, index) => (
+                <div key={index} className="mb-12 hover:bg-[#42474c64] p-5 rounded-xl transition-colors duration-100">
+                  <h3 className="text-2xl font-semibold text-white mb-4">{project.title}</h3>
+                  <p className="text-gray-400 mb-4">{project.description}</p>
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    {project.technologies.map((tech, techIndex) => (
+                      <span key={techIndex} className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-              </div>
-
-              <div className="mb-12 hover:bg-[#42474c64] p-5 rounded-xl transition-colors duration-100">
-                <h3 className="text-2xl font-semibold text-white mb-4">Aplicacion web inmobiliaria</h3>
-                <p className="text-gray-400 mb-4">
-                  Una aplicación web para la compra y venta de propiedades, con funcionalidades de búsqueda avanzada, filtrado por precio y ubicación,
-                  y gestión de propiedades, incluyendo la posibilidad de agregar, editar y eliminar propiedades.
-                </p>
-                <div className="flex flex-wrap gap-2 mt-4">
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">React</span>
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Redux</span>
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Next.js</span>
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Typescript</span>
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">php</span>
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">SQL</span>
-                </div>
-              </div>
-
-              <div className="mb-12 hover:bg-[#42474c64] p-5 rounded-xl transition-colors duration-100">
-                <h3 className="text-2xl font-semibold text-white mb-4">Gestion de tareas</h3>
-                <p className="text-gray-400 mb-4">
-                  Una aplicación web para la gestión de tareas, con funcionalidades de creación, edición y eliminación de tareas, así como la posibilidad de asignar tareas a diferentes usuarios,establecer fechas de vencimiento.
-                  La aplicación incluye un sistema de autenticación y autorización para garantizar la seguridad de los datos.
-
-
-                </p>
-                <div className="flex flex-wrap gap-2 mt-4">
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Laravel</span>
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Material UI</span>
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Nest.js</span>
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Typescript</span>
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Postgresql</span>
-                </div>
-              </div>
+              ))}
             </div>
           </section>
 
@@ -341,7 +244,6 @@ export default function Home() {
           </section>
 
         </main>
-
       </div>
     </div>
   )
