@@ -2,6 +2,8 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Inter, Roboto_Mono } from "next/font/google"
 import "./globals.css"
+import { SmoothCursor } from "@/components/ui/smooth-cursor";
+
 
 const inter = Inter({
   subsets: ["latin"],
@@ -25,7 +27,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className="scroll-smooth">
-      <body className={`${inter.variable} ${robotoMono.variable}`}>{children}</body>
+      <body className={`${inter.variable} ${robotoMono.variable}`}>
+        <SmoothCursor />
+        {children}
+      </body>
     </html>
   )
 }

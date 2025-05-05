@@ -6,10 +6,14 @@ import { FiLinkedin } from "react-icons/fi";
 import { FaGithub } from "react-icons/fa6";
 import Link from "next/link"
 import data from '../data/data.json'; // Importa el JSON
+import { MorphingText } from "@/components/magicui/morphing-text";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
+  const [activeSection, setActiveSection] = useState<string | null>(null);
 
+  // Efecto para seguir la posición del mouse
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
       setMousePosition({ x: e.clientX, y: e.clientY })
@@ -21,6 +25,35 @@ export default function Home() {
     }
   }, [])
 
+  // Efecto para detectar la sección activa con Intersection Observer
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
+    const options = {
+      root: null, // Usa el viewport como área de observación
+      rootMargin: "0px",
+      threshold: 0.5 // Activa cuando el 50% de la sección es visible
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id); // Actualiza la sección activa
+        }
+      });
+    }, options);
+
+    sections.forEach((section) => {
+      observer.observe(section); // Observa cada sección
+    });
+
+    // Limpieza al desmontar el componente
+    return () => {
+      sections.forEach((section) => {
+        observer.unobserve(section);
+      });
+    };
+  }, []);
+
   return (
     <div className="relative min-h-screen font-sans text-gray-200 overflow-hidden">
       {/* Cursor light effect */}
@@ -30,6 +63,10 @@ export default function Home() {
           background: `radial-gradient(600px at ${mousePosition.x}px ${mousePosition.y}px, rgba(29, 78, 216, 0.15), transparent 80%)`,
         }}
       />
+
+      
+
+      {/* Background animation */}
 
       {/* Background */}
       <div className="fixed inset-0 bg-[#0a192f] z-0" />
@@ -42,14 +79,20 @@ export default function Home() {
         >
           <div className="py-10">
             <h1 className="text-4xl md:text-5xl font-bold mb-2 text-white">Max Obregon</h1>
-            <h2 className="text-xl md:text-2xl text-gray-400">Ingeniero software</h2>
-            <p className="mt-6 text-gray-400">Enfocado en la calidad del código y la experiencia del usuario.</p>
+            <h2 className="text-xl md:text-2xl text-gray-400 pb-10">Ingeniero software</h2>
+            <MorphingText texts={["Frontend", "Backend", "UX/UI", "Mobile","Diseño","Web"]} />
           </div>
 
-          <nav className="mt-8">
+          <nav className="pt-20">
+          
             <ul className="space-y-6">
               <li>
-                <Link href="#about" className="flex items-center text-gray-400 hover:text-teal-300 transition-colors">
+                <Link
+                  href="#about"
+                  className={`flex items-center text-gray-400 hover:text-teal-300 transition-all duration-300 ease-in-out ${
+                    activeSection === 'about' ? 'transform -translate-x-4 text-teal-300 font-bold' : ''
+                  }`}
+                >
                   <div className="w-12 h-[1px] bg-gray-400 mr-4"></div>
                   SOBRE MI
                 </Link>
@@ -57,7 +100,9 @@ export default function Home() {
               <li>
                 <Link
                   href="#experience"
-                  className="flex items-center text-gray-400 hover:text-teal-300 transition-colors"
+                  className={`flex items-center text-gray-400 hover:text-teal-300 transition-all duration-300 ease-in-out ${
+                    activeSection === 'experience' ? 'transform -translate-x-4 text-teal-300 font-bold' : ''
+                  }`}
                 >
                   <div className="w-12 h-[1px] bg-gray-400 mr-4"></div>
                   EXPERIENCIA
@@ -66,7 +111,9 @@ export default function Home() {
               <li>
                 <Link
                   href="#projects"
-                  className="flex items-center text-gray-400 hover:text-teal-300 transition-colors"
+                  className={`flex items-center text-gray-400 hover:text-teal-300 transition-all duration-300 ease-in-out ${
+                    activeSection === 'projects' ? 'transform -translate-x-4 text-teal-300 font-bold' : ''
+                  }`}
                 >
                   <div className="w-12 h-[1px] bg-gray-400 mr-4"></div>
                   PROYECTOS
@@ -75,7 +122,9 @@ export default function Home() {
               <li>
                 <Link
                   href="#skills"
-                  className="flex items-center text-gray-400 hover:text-teal-300 transition-colors"
+                  className={`flex items-center text-gray-400 hover:text-teal-300 transition-all duration-300 ease-in-out ${
+                    activeSection === 'skills' ? 'transform -translate-x-4 text-teal-300 font-bold' : ''
+                  }`}
                 >
                   <div className="w-12 h-[1px] bg-gray-400 mr-4"></div>
                   HABILIDADES
@@ -86,13 +135,13 @@ export default function Home() {
 
           <div className="mt-auto pt-12">
             <div className="flex space-x-5">
-              <Link href="https://github.com/jefri1234" target="blank" className="text-gray-400 hover:text-white transition-colors">
+              <Link href="https://github.com/jefri1234" target="blank" className="text-gray-400 hover:text-white transition-colors cursor-none">
                 <FaGithub size={20} />
               </Link>
-              <Link href="https://www.linkedin.com/in/max-obregon-mejia-2245842b0/" target="blank" className="text-gray-400 hover:text-white transition-colors">
+              <Link href="https://www.linkedin.com/in/max-obregon-mejia-2245842b0/" target="blank" className="text-gray-400 hover:text-white transition-colors cursor-none">
                 <FiLinkedin size={20} />
               </Link>
-              <Link href="https://www.tiktok.com/@werksapps" target="blank" className="text-gray-400 hover:text-white transition-colors">
+              <Link href="https://www.tiktok.com/@werksapps" target="blank" className="text-gray-400 hover:text-white transition-colors cursor-none">
                 <FaTiktok size={20} />
               </Link>
             </div>
@@ -101,18 +150,17 @@ export default function Home() {
 
         {/* Scrollable content */}
         <main className="w-full md:ml-[400px] p-8 md:p-12">
-          <section id="about" className=" py-16 ">
+          <section id="about" className="py-16">
             <div className="max-w-2xl mx-auto">
               <p className="text-lg mb-6 text-gray-400">
                 Hola soy Max, soy desarrollador full stack me dedico a construir soluciones web que realmente funcionen: estables, bien pensadas y con una experiencia de usuario que sume. Me manejo con fluidez tanto en el frontend como en el backend, y disfruto cada etapa del desarrollo, desde planificar la arquitectura hasta pulir los últimos detalles de diseño.
               </p>
               <p className="text-lg text-gray-400 mb-6">
                 A lo largo de mi carrera he trabajado con <span className="text-teal-300">tecnologías</span>,
-                como JavaScript, React,Angular Node.js, Express, Php, Laravel, Python, Java, y bases de datos como MongoDB y PostgreSQL. También tengo experiencia integrando APIs, trabajando con autenticación, y creando interfaces que realmente buscan mejorar la experiencia del usuario.
+                como JavaScript, React, Angular, Node.js, Express, Php, Laravel, Python, Java, y bases de datos como MongoDB y PostgreSQL. También tengo experiencia integrando APIs, trabajando con autenticación, y creando interfaces que realmente buscan mejorar la experiencia del usuario.
               </p>
               <p className="text-lg text-gray-400 mb-6">
-                Me interesa que el código,funcione que sea mantenible, eficiente y claro para cualquier persona que lo toque después. Tengo una forma muy práctica de encarar los proyectos, buscando siempre soluciones simples pero sólidas, y aprendiendo lo que haga falta para que las cosas salgan bien. disfruto resolver problemas, aprender cosas nuevas{" "}
-
+                Me interesa que el código funcione, que sea mantenible, eficiente y claro para cualquier persona que lo toque después. Tengo una forma muy práctica de encarar los proyectos, buscando siempre soluciones simples pero sólidas, y aprendiendo lo que haga falta para que las cosas salgan bien. Disfruto resolver problemas, aprender cosas nuevas{" "}
                 <span className="text-teal-300">colaborar en equipos</span> y{" "}
                 <span className="text-teal-300">las buenas prácticas</span>{" "}
                 <span className="text-teal-300">Me tomo en serio lo que hago</span> pero{" "}
@@ -146,10 +194,9 @@ export default function Home() {
                     </svg>
                   </h3>
                   <p className="text-gray-400">{exp.description}</p>
-                  
-                  <a href={exp.link} target="_blank" rel="noopener noreferrer" className="text-teal-300 hover:underline mt-2 inline-block">
+                  <Link href={exp.link} target="_blank" rel="noopener noreferrer" className="text-teal-300 hover:underline mt-2 inline-block cursor-none">
                     Ver más
-                  </a>
+                  </Link>
                   <div className="flex flex-wrap gap-2 mt-4">
                     {exp.technologies.map((tech, techIndex) => (
                       <span key={techIndex} className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">
@@ -242,8 +289,8 @@ export default function Home() {
               </div>
             </div>
           </section>
-
         </main>
+        <ScrollToTopButton />
       </div>
     </div>
   )
