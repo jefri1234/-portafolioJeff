@@ -49,3 +49,9 @@ pre {
 ::-webkit-scrollbar-thumb:hover {
   background: #64ffda;
 }
+
+
+::selection {
+  background-color: rgb(20, 16, 16); /* Tailwind blue-500 */
+  color: #5eead4;
+}

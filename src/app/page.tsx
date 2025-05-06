@@ -89,7 +89,7 @@ export default function Home() {
               <li>
                 <Link
                   href="#about"
-                  className={`flex items-center text-gray-400 hover:text-teal-300 transition-all duration-300 ease-in-out ${
+                  className={`flex items-center text-gray-400 hover:text-teal-300 transition-all duration-300 ease-in-out cursor-none ${
                     activeSection === 'about' ? 'transform -translate-x-4 text-teal-300 font-bold' : ''
                   }`}
                 >
@@ -100,7 +100,7 @@ export default function Home() {
               <li>
                 <Link
                   href="#experience"
-                  className={`flex items-center text-gray-400 hover:text-teal-300 transition-all duration-300 ease-in-out ${
+                  className={`flex items-center text-gray-400 hover:text-teal-300 transition-all duration-300 ease-in-out cursor-none ${
                     activeSection === 'experience' ? 'transform -translate-x-4 text-teal-300 font-bold' : ''
                   }`}
                 >
@@ -111,7 +111,7 @@ export default function Home() {
               <li>
                 <Link
                   href="#projects"
-                  className={`flex items-center text-gray-400 hover:text-teal-300 transition-all duration-300 ease-in-out ${
+                  className={`flex items-center text-gray-400 hover:text-teal-300 transition-all duration-300 ease-in-out cursor-none ${
                     activeSection === 'projects' ? 'transform -translate-x-4 text-teal-300 font-bold' : ''
                   }`}
                 >
@@ -122,7 +122,7 @@ export default function Home() {
               <li>
                 <Link
                   href="#skills"
-                  className={`flex items-center text-gray-400 hover:text-teal-300 transition-all duration-300 ease-in-out ${
+                  className={`flex items-center text-gray-400 hover:text-teal-300 transition-all duration-300 ease-in-out cursor-none ${
                     activeSection === 'skills' ? 'transform -translate-x-4 text-teal-300 font-bold' : ''
                   }`}
                 >
@@ -194,9 +194,9 @@ export default function Home() {
                     </svg>
                   </h3>
                   <p className="text-gray-400">{exp.description}</p>
-                  <Link href={exp.link} target="_blank" rel="noopener noreferrer" className="text-teal-300 hover:underline mt-2 inline-block cursor-none">
+                  {/* <Link href={exp.link} target="_blank" rel="noopener noreferrer" className="text-teal-300 hover:underline mt-2 inline-block cursor-none">
                     Ver más
-                  </Link>
+                  </Link> */}
                   <div className="flex flex-wrap gap-2 mt-4">
                     {exp.technologies.map((tech, techIndex) => (
                       <span key={techIndex} className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">

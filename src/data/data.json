@@ -12,21 +12,21 @@
         "title": "Consultinggroup - Desarrollador Full Stack",
         "description": "Lideré para la creacion de la Aplicacion de un Aula virtual donde podemos visualizar cursos, ingreso al aula virtual, modulos , materiales de estudio, generación de certificados y constancias. Filtrado de cursos, modulos, Landing Pages para cada curso, Filtrado de alumnos, Panel administrativo y adapataciones y creación de interfaces a nivel general.",
         "technologies": ["JavaScript", "TypeScript", "React", "Next.js", "Node.js", "AWS"],
-        "link": "https://overhaulmining.com/"
+        "link": "https://consultinggroup.com.pe/"
       },
       {
         "date": "2023-01 / 2023-12",
         "title": "Rematazo - Desarrollador Full Stack",
         "description": "Creacion de un aplicativo de ventas de productos tecnologicos, interfaces para la visualización de productos por mas vendidos, ofertas o promociones asi como la organizacion por categoria y busqueda de productos, clasificación de nuevos producos, Panel administrativo para realización de cotizaciones asi como adaptacion de interfaces en diferentes dispositivos.",
         "technologies": ["React", "Next.js", "Tailwind CSS", "PHP", "Laravel"],
-        "link": "https://overhaulmining.com/"
+        "link": "https://rematazo.pe/"
       },
       {
         "date": "2022-01 / 2022-06",
         "title": "NBJCONSTRUCTORES - Desarrollador Frontend",
         "description": "Desarollo una Aplicacion inmobiliaria de venta de propiedades,casas, lotes, pisos, departamento donde podemos realizar busquedas para obtener por direccion o precios, ademas de obtener descripcion detallada de cada propiedad.",
         "technologies": ["Angular", "Material UI", "Tailwind CSS", "PHP", "Laravel"],
-        "link": "https://overhaulmining.com/"
+        "link": "https://nbjconstructores.com/"
       }
     ],
 
