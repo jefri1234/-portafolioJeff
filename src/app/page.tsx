@@ -64,10 +64,6 @@ export default function Home() {
         }}
       />
 
-      
-
-      {/* Background animation */}
-
       {/* Background */}
       <div className="fixed inset-0 bg-[#0a192f] z-0" />
 
@@ -80,18 +76,17 @@ export default function Home() {
           <div className="py-10">
             <h1 className="text-4xl md:text-5xl font-bold mb-2 text-white">Max Obregon</h1>
             <h2 className="text-xl md:text-2xl text-gray-400 pb-10">Ingeniero software</h2>
-            <MorphingText texts={["Frontend", "Backend", "UX/UI", "Mobile","Diseño","Web"]} />
+            <MorphingText texts={["Frontend", "Backend", "UX/UI", "Mobile", "Diseño", "Web"]} />
           </div>
 
           <nav className="pt-20">
-          
+
             <ul className="space-y-6">
               <li>
                 <Link
                   href="#about"
-                  className={`flex items-center text-gray-400 hover:text-teal-300 transition-all duration-300 ease-in-out cursor-none ${
-                    activeSection === 'about' ? 'transform -translate-x-4 text-teal-300 font-bold' : ''
-                  }`}
+                  className={`flex items-center text-gray-400 hover:text-teal-300 transition-all duration-300 ease-in-out cursor-none ${activeSection === 'about' ? 'transform -translate-x-4 text-teal-300 font-bold' : ''
+                    }`}
                 >
                   <div className="w-12 h-[1px] bg-gray-400 mr-4"></div>
                   SOBRE MI
@@ -100,9 +95,8 @@ export default function Home() {
               <li>
                 <Link
                   href="#experience"
-                  className={`flex items-center text-gray-400 hover:text-teal-300 transition-all duration-300 ease-in-out cursor-none ${
-                    activeSection === 'experience' ? 'transform -translate-x-4 text-teal-300 font-bold' : ''
-                  }`}
+                  className={`flex items-center text-gray-400 hover:text-teal-300 transition-all duration-300 ease-in-out cursor-none ${activeSection === 'experience' ? 'transform -translate-x-4 text-teal-300 font-bold' : ''
+                    }`}
                 >
                   <div className="w-12 h-[1px] bg-gray-400 mr-4"></div>
                   EXPERIENCIA
@@ -111,9 +105,8 @@ export default function Home() {
               <li>
                 <Link
                   href="#projects"
-                  className={`flex items-center text-gray-400 hover:text-teal-300 transition-all duration-300 ease-in-out cursor-none ${
-                    activeSection === 'projects' ? 'transform -translate-x-4 text-teal-300 font-bold' : ''
-                  }`}
+                  className={`flex items-center text-gray-400 hover:text-teal-300 transition-all duration-300 ease-in-out cursor-none ${activeSection === 'projects' ? 'transform -translate-x-4 text-teal-300 font-bold' : ''
+                    }`}
                 >
                   <div className="w-12 h-[1px] bg-gray-400 mr-4"></div>
                   PROYECTOS
@@ -122,9 +115,8 @@ export default function Home() {
               <li>
                 <Link
                   href="#skills"
-                  className={`flex items-center text-gray-400 hover:text-teal-300 transition-all duration-300 ease-in-out cursor-none ${
-                    activeSection === 'skills' ? 'transform -translate-x-4 text-teal-300 font-bold' : ''
-                  }`}
+                  className={`flex items-center text-gray-400 hover:text-teal-300 transition-all duration-300 ease-in-out cursor-none ${activeSection === 'skills' ? 'transform -translate-x-4 text-teal-300 font-bold' : ''
+                    }`}
                 >
                   <div className="w-12 h-[1px] bg-gray-400 mr-4"></div>
                   HABILIDADES
@@ -194,9 +186,9 @@ export default function Home() {
                     </svg>
                   </h3>
                   <p className="text-gray-400">{exp.description}</p>
-                  {/* <Link href={exp.link} target="_blank" rel="noopener noreferrer" className="text-teal-300 hover:underline mt-2 inline-block cursor-none">
+                  <Link href={exp.link} target="_blank" rel="noopener noreferrer" className="text-teal-300 hover:underline mt-2 inline-block cursor-none">
                     Ver más
-                  </Link> */}
+                  </Link>
                   <div className="flex flex-wrap gap-2 mt-4">
                     {exp.technologies.map((tech, techIndex) => (
                       <span key={techIndex} className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">
@@ -278,11 +270,12 @@ export default function Home() {
                 <div className="flex flex-wrap gap-2">
                   <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Docker</span>
                   <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Git</span>
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">GitHab</span>
                   <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">VPS</span>
                   <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">AWS</span>
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Githab</span>
                   <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Trello</span>
-                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Notion</span>
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Jira</span>
+                  <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Scrum</span>
                   <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Figma</span>
                   <span className="px-3 py-1 text-sm bg-[#172a46] text-teal-300 rounded">Postman</span>
                 </div>

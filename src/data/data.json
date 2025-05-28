@@ -5,7 +5,7 @@
         "title": "OVERHAULMINING - Desarrollador Full Stack",
         "description": "Creación de un sistema para una empresa Minera para el proceso de conexión con la SUNAT, creación de facturación electrónica, documentos firmados digitalmente, Optimizar la gestión de los datos para poder obtener de manera organizada, búsqueda de empresas, equipos, placa, ruc, personas, empresas matrices, filtrar y buscar por diferentes tipos de opciones, Autenticación y asignación de roles para gerente, contador, inspector, administrador cada rol tiene asignado sus respectivas acciones, cargar, descargar, filtrar, crear, editar, notificar y demás acciones, Implementación de web corporativa para la representación a la empresa acerca de los servicios, cursos, empresas.",
         "technologies": ["PHP", "Laravel", "Typescript", "React", "Next.js", "Docker", "VPS", "AWS"],
-        "link": "https://overhaulmining.com/"
+        "link": ""
       },
       {
         "date": "2024-01 / 2024-12",
