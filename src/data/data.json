@@ -1,6 +1,13 @@
 {
     "experiences": [
       {
+        "date": "2025-06 / Actualidad",
+        "title": "Atik Solutions - Backend Developer",
+        "description": "Creación de un sistema para la el reclutamientos de candidatos y busqueda de empleos. El sistema permite registrarse y buscar empleos, ademas de la posibilidad de crear perfiles de candidatos y empresas, las empresas pueden publicar ofertas de empleo, los candidatos pueden postularse a las ofertas de empleo, los candidatos pueden ver sus postulaciones y las empresas pueden ver sus candidatos, ademas de la posibilidad de filtrar por diferentes tipos de opciones,las empresas pueden gestionar las postulaciones a esa oferta de empleo ya sea aprobadas o rechazadas, ademas de programar una entrevista y poder verla de manera organizada en un calendario semanal.",
+        "technologies": ["Node.js", "Nest.js", "Typescript", "React", "Next.js", "Docker", "Jenkis", "Git", "JWT","Scrum","Microservices","PostgreSQL"],
+        "link": ""
+      },
+      {
         "date": "2025-01 / 2025-04",
         "title": "OVERHAULMINING - Desarrollador Full Stack",
         "description": "Creación de un sistema para una empresa Minera para el proceso de conexión con la SUNAT, creación de facturación electrónica, documentos firmados digitalmente, Optimizar la gestión de los datos para poder obtener de manera organizada, búsqueda de empresas, equipos, placa, ruc, personas, empresas matrices, filtrar y buscar por diferentes tipos de opciones, Autenticación y asignación de roles para gerente, contador, inspector, administrador cada rol tiene asignado sus respectivas acciones, cargar, descargar, filtrar, crear, editar, notificar y demás acciones, Implementación de web corporativa para la representación a la empresa acerca de los servicios, cursos, empresas.",
